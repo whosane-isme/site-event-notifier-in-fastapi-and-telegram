@@ -24,7 +24,7 @@ This is an early learning project. Right now, every event goes to one Telegram c
    source .venv/bin/activate
    ```
 
-   On Windows PowerShell, activate it with `\.venv\Scripts\Activate.ps1`.
+   On Windows PowerShell, activate it with `.\.venv\Scripts\Activate.ps1`.
 
 2. Install the dependencies:
 

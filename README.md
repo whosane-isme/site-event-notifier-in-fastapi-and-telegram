@@ -2,9 +2,11 @@
 
 A small FastAPI service that receives website events and sends notifications to Telegram.
 
+> **The less AI slop edition:** rewritten and organized by hand, one understandable step at a time.
+
 ## About this repository
 
-This is a manually rewritten and organized version of my earlier vibe-coded project, [tbot](https://github.com/whosane-isme/tbot). I am rebuilding it step by step so I understand how each part works and can maintain it myself.
+This is my less-AI-slop edition of the earlier vibe-coded project, [tbot](https://github.com/whosane-isme/tbot). I am rewriting and organizing it by hand, step by step, so I understand how each part works and can maintain it myself.
 
 ## What it does
 

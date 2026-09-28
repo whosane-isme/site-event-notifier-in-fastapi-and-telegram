@@ -23,7 +23,12 @@ class Event(BaseModel):
         "book_click",
         "contact_click"
     ]
-    page: str = "الصفحة الرئيسي"
+    page: Literal[
+        "home",
+        "booking",
+        "contact",
+    ] = "home"
+
 
 
 # Route بسيط للتأكد أن السيرفر شغال

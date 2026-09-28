@@ -22,11 +22,11 @@ This is an early learning project. Right now, every event goes to one Telegram c
 1. Create and activate a virtual environment:
 
    ```bash
-   python -m venv .venv
-   source .venv/bin/activate
+   python3 -m venv venv
+   source venv/bin/activate
    ```
 
-   On Windows PowerShell, activate it with `.\.venv\Scripts\Activate.ps1`.
+   On Windows PowerShell, create it with `python -m venv venv` and activate it with `.\venv\Scripts\Activate.ps1`.
 
 2. Install the dependencies:
 
@@ -39,8 +39,10 @@ This is an early learning project. Right now, every event goes to one Telegram c
 4. Start the API:
 
    ```bash
-   python -m uvicorn main:app --reload
+   make reload
    ```
+
+   You can also use `make` to start it. The Makefile shortcuts are written for Bash on Linux/macOS; on Windows, use `python -m uvicorn main:app --reload` instead.
 
 Open [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) to send a test event, or [http://127.0.0.1:8000/health](http://127.0.0.1:8000/health) to check the server.
 
@@ -59,6 +61,6 @@ The next improvements are to handle missing or invalid Telegram settings clearly
 
 ## شغلات تافهة تعلمتها بالطريق
 
-ها وصدگ، تعلمت أستخدم `make` همين، وسويت اختصارات حتى ما أظل كل مرة أكتب نفس أوامر الـvenv وUvicorn. أول مرة شغّل `make venv` حتى ينشئ البيئة ويثبت المكتبات، وبعدها كل مرة تريد تشغّل السيرفر استخدم `make uvicorn`.
+ها وصدگ، تعلمت أستخدم `make` همين، وخليت بالـMakefile الاختصارات اللي أستخدمها بفولدر المشروع: `make` أو `make all` يشغّل السيرفر، و`make reload` يشغّله مباشرة من بيئة `venv`. أما `make venv` فيفتحلي Bash والبيئة مفعّلة. أول مرة لازم أنشئ البيئة وأثبت المكتبات بالأوامر الموجودة فوق؛ `make venv` ما يسوي هالخطوة.
 
 وإذا واحد يريد يبني نفس الأداة بإيده خطوة خطوة، خليت الـAI يسويلي [دوكيومنت يشرح طريقة بنائها من البداية](https://github.com/whosane-isme/tbot/blob/main/REBUILD_MAIN_PY.md).

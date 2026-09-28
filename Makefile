@@ -1,20 +1,10 @@
-ifeq ($(OS),Windows_NT)
-PYTHON ?= py -3
-VENV_PYTHON = .venv/Scripts/python.exe
-else
-PYTHON ?= python3
-VENV_PYTHON = .venv/bin/python
-endif
+.PHONY: all venv reload
 
-.PHONY: setup venv run uvicorn
+all:
+	source venv/bin/activate && uvicorn main:app --reload
 
-setup:
-	$(PYTHON) -m venv .venv
-	$(VENV_PYTHON) -m pip install -r requirements.txt
+venv:
+	bash -c 'source venv/bin/activate && exec bash'
 
-venv: setup
-
-run:
-	$(VENV_PYTHON) -m uvicorn main:app --reload
-
-uvicorn: run
+reload:
+	venv/bin/uvicorn main:app --reload

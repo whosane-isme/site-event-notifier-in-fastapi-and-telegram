@@ -54,3 +54,9 @@ Example request for `POST /event`:
 ## Next steps
 
 The next improvements are to handle missing or invalid Telegram settings clearly, then learn how API keys and per-project settings could support more than one user. A client library and automatic uptime checks can wait until the core service is reliable.
+
+## شغلات تعلمتها بالطريق
+
+ها وصدگ، تعلمت أستخدم `make` همين، وسويت اختصارات حتى ما أظل كل مرة أكتب نفس أوامر الـvenv وUvicorn. أول مرة شغّل `make venv` حتى ينشئ البيئة ويثبت المكتبات، وبعدها كل مرة تريد تشغّل السيرفر استخدم `make uvicorn`.
+
+وإذا واحد يريد يبني نفس الأداة بإيده خطوة خطوة، خليت الـAI يسويلي [دوكيومنت يشرح طريقة بنائها من البداية](https://github.com/whosane-isme/tbot/blob/main/REBUILD_MAIN_PY.md).

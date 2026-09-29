@@ -73,4 +73,4 @@ The next improvements are to handle missing or invalid Telegram settings clearly
 
 
 
-عود بعدين اضيف rate limit و cooldown , `kd 
+عود بعدين اضيف rate limit و cooldown و ذني الشغلات 

@@ -64,3 +64,13 @@ The next improvements are to handle missing or invalid Telegram settings clearly
 ها وصدگ، تعلمت أستخدم `make` همين، وخليت بالـMakefile الاختصارات اللي أستخدمها بفولدر المشروع: `make` أو `make all` يشغّل السيرفر، و`make reload` يشغّله مباشرة من بيئة `venv`. أما `make venv` فيفتحلي Bash والبيئة مفعّلة. أول مرة لازم أنشئ البيئة وأثبت المكتبات بالأوامر الموجودة فوق؛ `make venv` ما يسوي هالخطوة.
 
 وإذا واحد يريد يبني نفس الأداة بإيده خطوة خطوة، خليت الـAI يسويلي [دوكيومنت يشرح طريقة بنائها من البداية](https://github.com/whosane-isme/tbot/blob/main/REBUILD_MAIN_PY.md).
+
+
+
+
+
+
+
+
+
+عود بعدين اضيف rate limit و cooldown , `kd 
